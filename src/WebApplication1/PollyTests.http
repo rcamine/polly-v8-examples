@@ -1,0 +1,17 @@
+@PollyTest = http://localhost:5047
+
+### Fail request
+GET {{PollyTest}}/api/users/fail
+Accept: application/json
+
+### Get by name
+GET {{PollyTest}}/api/users/rcamine
+Accept: application/json
+
+### Close circuit
+GET {{PollyTest}}/api/close
+Accept: application/json
+
+### Open circuit
+GET {{PollyTest}}/api/open
+Accept: application/json
